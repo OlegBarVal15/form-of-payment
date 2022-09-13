@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="normalize.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <div class="wrapper">
+          <div class="header__container">
+            <div class="header__logo logo">
+              <img class="logo__img" src="./Combined_Shape.png" alt="logo" />
+              <div class="logo__text">Lorem, ipsum dolor.</div>
+            </div>
+            <div class="header__cart cart">
+              <div class="cart__text">cart</div>
+              <img class="cart__img" src="./cart.svg" alt="cart" />
+              <div class="cart__count">3</div>
+            </div>
+          </div>
+        </div>
+        <div class="header__line"></div>
+      </header>
+
+      <div class="main-container container">
+        <div class="container__shipping">
+          <nav class="container__menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link active" href="#">Shipping</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Billing</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Payment</a>
+              </li>
+            </ul>
+          </nav>
+
+          <form class="form" action="">
+            <h1 class="title__form">Shipping Info</h1>
+            <div class="subtitle__form">Recipient</div>
+            <div class="input-container">
+              <input
+                class="input-container__input"
+                type=""
+                placeholder="Full name"
+              />
+              <div class="container-row">
+                <input
+                  class="input-container__input min-width"
+                  type=""
+                  placeholder="Daytime Phone"
+                />
+                <div class="input-container__subtext">
+                  For delivery questions only
+                </div>
+              </div>
+              <div class="subtitle__form">Address</div>
+              <input
+                class="input-container__input"
+                type=""
+                placeholder="Street Address"
+              />
+              <input
+                class="input-container__input"
+                type=""
+                placeholder="Apt, Suite, Bldg, Gate Code. (optional)"
+              />
+              <div class="input-container__custom-input">
+                <input
+                  id="city-input"
+                  class="input-container__input"
+                  type=""
+                  placeholder="City"
+                />
+                <img src="./aim.svg" alt="aim" />
+              </div>
+              <div class="container-row">
+                <select
+                  class="input-container__input min-width"
+                  id="Country"
+                  name=""
+                  id=""
+                >
+                  <option value="">Country</option>
+                </select>
+                <input
+                  class="input-container__input min-width"
+                  type=""
+                  placeholder="ZIP"
+                />
+              </div>
+            </div>
+            <button class="button">Continue</button>
+          </form>
+        </div>
+        <div class="container__summary summary">
+          <div class="summary__header">
+            <h2 class="summary__title">Order Summary</h2>
+            <a class="summary__link" href="#">edit order</a>
+          </div>
+
+          <div class="summary__product-container">
+            <div class="summary__product product">
+              <div class="product__photo">
+                <img src="./Bitmap1.png" alt="" />
+              </div>
+
+              <div class="product__container">
+                <div class="product__name">The Chelsea Boot</div>
+                <div class="product__color">Black</div>
+                <div class="product__quantity">Quantity: 1</div>
+              </div>
+
+              <div class="product__price">$235</div>
+              <div class="product__line line"></div>
+            </div>
+
+            <div class="summary__product product">
+              <div class="product__photo">
+                <img src="./Bitmap.png" alt="" />
+              </div>
+
+              <div class="product__container">
+                <div class="product__name">The Chelsea Boot</div>
+                <div class="product__color">Black</div>
+                <div class="product__quantity">Quantity: 1</div>
+              </div>
+
+              <div class="product__price">$235</div>
+              <div class="product__line line"></div>
+            </div>
+
+            <div class="summary__product product">
+              <div class="product__photo">
+                <img src="./Bitmap3.png" alt="" />
+              </div>
+
+              <div class="product__container">
+                <div class="product__name">The Chelsea Boot</div>
+                <div class="product__color">Black</div>
+                <div class="product__quantity">Quantity: 1</div>
+              </div>
+
+              <div class="product__price">$235</div>
+              <div class="product__line line"></div>
+            </div>
+          </div>
+
+          <div class="summary__result-container">
+            <div class="summary__result result">
+              <div class="result__element">Subtotal</div>
+              <div class="result__element">$398</div>
+            </div>
+
+            <div class="summary__result result">
+              <div class="result__element">Shipping</div>
+              <div class="result__element">Free</div>
+            </div>
+
+            <div class="summary__result result">
+              <div class="result__element">Taxes</div>
+              <div class="result__element">$12.12</div>
+              <div class="result__line line"></div>
+            </div>
+
+            <div class="summary__result result">
+              <div class="result__element">Total</div>
+              <div class="result__element">$410.12</div>
+            </div>
+          </div>
+
+          <div class="summary__bottom-text">
+            All purchases are subject to our Terms and Conditions.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="test">
+      <p>test text</p>
+      <div style="height: 25px"></div>
+
+      <div class="summary__result result">
+        <div class="result__element">Shipping</div>
+        <div class="result__element">Free</div>
+      </div>
+
+      <div></div>
+
+      <div class="summary__result result">
+        <div class="result__element">Shipping</div>
+        <div class="result__element">Free</div>
+      </div>
+
+      <div></div>
+    </div>
+  </body>
+</html>

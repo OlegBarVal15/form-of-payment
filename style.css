@@ -1,0 +1,317 @@
+.app {
+  max-width: 1024px;
+  background-color: #e6e9f0;
+  margin: 0 auto;
+  border: 1px solid #c90ea5;
+}
+.wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.header {
+  background: #ffffff;
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  background: #ffffff;
+  padding: 12px 0px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  color: #5a1094;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+}
+.logo__img {
+  margin-right: 10px;
+}
+.cart {
+  display: flex;
+  align-items: center;
+  color: #c90ea5;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  position: relative;
+}
+.cart__img {
+  margin-right: 5px;
+}
+.cart__count {
+  border-radius: 50%;
+  background-color: #ff1876;
+  height: 14px;
+  width: 14px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 9px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.header__line {
+  background: linear-gradient(270deg, #7e00e8 0%, #ff1876 54.17%, #bb0cb2 100%);
+  opacity: 0.3;
+
+  height: 1px;
+}
+.container {
+  margin-left: 162px;
+  margin-top: 45px;
+  background: linear-gradient(180deg, #ffffff 0%, #fefefe 100%);
+  box-shadow: 0px 2px 18px rgba(0, 0, 0, 0.07);
+  border-radius: 5px;
+  width: 68%;
+  display: flex;
+}
+.menu__list {
+  display: flex;
+  font-family: "Helvetica Neue", serif;
+  font-size: 12px;
+  line-height: 14px;
+  color: #979797;
+  margin-bottom: 20px;
+}
+.menu__item {
+  position: relative;
+}
+
+.menu__item:not(:first-child) {
+  margin-left: 39px;
+}
+.menu__link {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 12px;
+  color: #979797;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+
+.menu__link.active {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+  color: #5a1094;
+}
+
+.menu__item::after {
+  content: url(./arrow.svg);
+  position: absolute;
+  display: block;
+  top: 50%;
+  right: -18px;
+  width: 9.86px;
+  height: 19.76px;
+  transform: translateY(-50%);
+}
+
+.menu__item:last-child::after {
+  content: "";
+  display: none;
+}
+
+.form {
+  width: 100%;
+}
+.title__form {
+  font-family: "Montserrat", sans-serif;
+  font-size: 26px;
+  line-height: 31px;
+  color: #5a1094;
+  margin-bottom: 19px;
+}
+.subtitle__form {
+  font-family: "Helvetica Neue", serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: #5a1094;
+  margin-bottom: 6px;
+}
+.input-container {
+  display: flex;
+  flex-direction: column;
+}
+.input-container__input {
+  margin-bottom: 10px;
+  font-family: "Helvetica Neue", serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: #6b6b6b;
+  padding: 10px 10px 10px 15px;
+  border: 1px solid #dedcdc;
+}
+.input-container__input.min-width {
+  width: 50%;
+  font-family: "Helvetica Neue", serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: #6b6b6b;
+}
+.input-container__input.min-width:not(:last-child) {
+  margin-right: 20px;
+}
+
+.container-row {
+  display: flex;
+}
+.input-container__subtext {
+  font-family: "Helvetica Neue", serif;
+  font-size: 13px;
+  line-height: 12px;
+  color: #777879;
+  width: 27%;
+  margin-left: 10px;
+}
+.input-container__custom-input {
+  border: 1px solid #dedcdc;
+  margin-bottom: 10px;
+  font-family: "Helvetica Neue", serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: #6b6b6b;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  padding: 10px 10px 10px 15px;
+}
+#city-input {
+  flex-grow: 1;
+  height: 100%;
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+
+.button {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  background: rgba(90, 16, 148, 0.8);
+  border: 1px solid rgba(67, 28, 93, 0.8);
+  border-radius: 5px;
+  width: 50%;
+  height: 45px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.container__summary {
+  background-color: #e6e9f0;
+  flex-grow: 1;
+  padding: 10px 8px;
+}
+.container__shipping {
+  padding: 20px 40px 44px;
+  width: 57.15%;
+}
+
+.summary__header {
+  display: flex;
+  justify-content: space-between;
+}
+.summary__title {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  margin-bottom: 4px;
+
+  color: #5a1094;
+}
+.summary__link {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+
+  color: #979797;
+  text-decoration: underline;
+}
+.container__summary {
+  position: relative;
+}
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 11px;
+}
+
+.product__container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  flex-grow: 1;
+}
+.product__price {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 12px;
+  color: #777879;
+}
+.product__name {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 12px;
+  color: #777879;
+  margin-bottom: 7px;
+}
+.product__color {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 10px;
+  color: #2b2525;
+}
+.product__quantity {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 10px;
+  color: #2b2525;
+}
+.product__line {
+  margin-top: 10px;
+}
+.line {
+  mix-blend-mode: normal;
+  opacity: 0.2;
+  height: 1px;
+  background-color: #979797;
+  width: 100%;
+}
+.summary__result {
+  display: flex;
+  justify-content: space-between;
+}
+.result__element {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 12px;
+  color: #777879;
+}
+.result__line {
+  margin-top: 10px;
+}
+.result {
+  margin-bottom: 9px;
+}
+.result:last-child .result__element {
+  font-size: 12px;
+  font-family: "Helvetica Neue", sans-serif;
+  color: #431c5d;
+  font-weight: 700;
+}
+.result:nth-child(3) {
+  flex-wrap: wrap;
+}
+.product {
+  margin-bottom: 13px;
+}
+.summary__bottom-text {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 10px;
+  line-height: 12px;
+  color: #9c9c9c;
+}
+.summary__bottom-text {
+  position: absolute;
+  bottom: 29px;
+  left: 37px;
+}
+
+.test .summary__result:first-of-type {
+  background-color: yellow;
+}
